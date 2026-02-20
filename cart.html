@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantu Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- Header Navbar -->
+
+    <div class="container-fluid px-lg-6">
+        <div class="row">
+
+            <div class="col-12">
+
+                <header class="main-header shadow-sm bg-white d-flex align-items-center px-4">
+                    <div class="header-left d-flex align-items-center">
+                        <div class="theme-switch-track me-3">
+                            <div class="theme-switch-handle"></div>
+                        </div>
+                        <a href="#" class="navbar-brand d-flex align-items-center">
+                            <div class="logo-icon-box me-2"><i class="bi bi-bag-heart-fill"></i></div>
+                            <span class="logo-text">Mantu</span>
+                        </a>
+                    </div>
+
+                    <div class="header-right-content d-flex align-items-center ms-auto">
+                        <nav class="header-nav d-none d-lg-block me-3">
+                            <ul class="nav">
+                                <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                                <!-- Categories section -->
+
+
+                                <li class="nav-item dropdown-wrapper">
+                                    <a href="#" class="nav-link">Categories <i
+                                            class="bi bi-chevron-down ms-1 small"></i></a>
+                                    <div class="mega-dropdown shadow-sm">
+                                        <div class="row g-0">
+                                            <div class="col-6 dropdown-column">
+                                                <h6 class="dropdown-header">Classic</h6>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Shop Right Sidebar</a></li>
+                                                    <li><a href="#">Banner Right Sidebar</a></li>
+                                                    <li><a href="#">Shop Full Width</a></li>
+                                                    <li><a href="#">Banner Full Width</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6 dropdown-column">
+                                                <h6 class="dropdown-header">List</h6>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Shop Right Sidebar</a></li>
+                                                    <li><a href="#">Banner Right Sidebar</a></li>
+                                                    <li><a href="#">Shop Full Width</a></li>
+                                                    <li><a href="#">Banner Full Width</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown-wrapper">
+                                    <a href="product1.html" class="nav-link">Products <i
+                                            class="bi bi-chevron-down ms-1 small"></i></a>
+                                    <ul class="standard-dropdown shadow-sm list-unstyled">
+                                        <li><a href="#">Product Detail</a></li>
+                                        <li><a href="#">Product Accordion</a></li>
+                                        <li><a href="#">Product Full Width</a></li>
+                                        <li><a href="#">Accordion Full Width</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown-wrapper">
+                                    <a class="nav-link" href="#">Pages <i class="bi bi-chevron-down"></i></a>
+                                    <ul class="standard-dropdown shadow-sm list-unstyled">
+                                        <li class="has-submenu">
+                                            <a href="#">Blog <i class="bi bi-chevron-right float-end mt-1"></i></a>
+                                            <div class="submenu-dropdown">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Blog Grid</a></li>
+                                                    <li><a href="#">Blog List</a></li>
+                                                    <li><a href="#">Blog Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Cart</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header-icons d-flex align-items-center">
+                            <a href="#" class="icon-link"><i class="bi bi-search"></i></a>
+                            <div class="dropdown-wrapper">
+                                <a href="#" class="icon-link"><i class="bi bi-person custom-account-icon"></i></a>
+                                <ul class="standard-dropdown shadow-sm list-unstyled">
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Checkout</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="icon-link position-relative"><i class="bi bi-heart"></i><span
+                                    class="badge-count">3</span></a>
+                            <a href="#" class="icon-link position-relative"><i class="bi bi-cart3"></i><span
+                                    class="badge-count cart-bg">4</span></a>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Header Closed -->
+
+                <!-- Cart Search bar -->
+
+                <div class="container-fluid px-lg-6 mt-4">
+                    <div
+                        class="cart-header-bar bg-white rounded-4 shadow-sm d-flex justify-content-between align-items-center px-4 py-3">
+                        <h5 class="fw-bold mb-0" style="color: #2b3445;">Cart Page</h5>
+
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="home.html"
+                                        class="text-decoration-none text-dark">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    <span class="mx-2 text-muted">»</span>
+                                    <span style="color: #7d879c;">Cart Page</span>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Datatable  -->
+                <div class="container-fluid px-lg-6 mt-4">
+                    <div class="row g-4">
+
+                        <div class="col-lg-8">
+                            <div class="bg-white rounded-4 shadow-sm p-4 h-100">
+                                <div class="table-responsive">
+                                    <table class="table align-middle custom-cart-table">
+                                        <thead class="table-light">
+                                            <tr class="text-muted small">
+                                                <th class="ps-3 border-0">Product</th>
+                                                <th class="border-0">Price</th>
+                                                <th class="border-0">Quantity</th>
+                                                <th class="border-0">Total</th>
+                                                <th class="border-0"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="product-img-box me-3">
+                                                            <img src="images/watch.jpg" alt="Mantu smart watch">
+                                                        </div>
+                                                        <span class="fw-medium">Mantu smart watch</span>
+                                                    </div>
+                                                </td>
+                                                <td data-label="price" class="fw-bold">$516.00</td>
+                                                <td data-label="Quantity"><input type="number"
+                                                        class="form-control qty-input" value="1"></td>
+                                                <td data-label="Total" class="fw-bold">$516.00</td>
+                                                <td class="text-end pe-3"><i
+                                                        class="bi bi-trash text-primary remove-icon"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="product-img-box me-3">
+                                                            <img src="images/15.jpg" alt="Leather bag">
+                                                        </div>
+                                                        <span class="fw-medium">Leather bag</span>
+                                                    </div>
+                                                </td>
+                                                <td data-label="Price" class="fw-bold">$75.00</td>
+                                                <td data-label="Quantity"><input type="number"
+                                                        class="form-control qty-input" value="1"></td>
+                                                <td data-label="Total" class="fw-bold">$75.00</td>
+                                                <td class="text-end pe-3"><i
+                                                        class="bi bi-trash text-primary remove-icon"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="product-img-box me-3">
+                                                            <img src="images/fshirt.jpg" alt="Cotton fabric T-shirt">
+                                                        </div>
+                                                        <span class="fw-medium">Cotton fabric T-shirt</span>
+                                                    </div>
+                                                </td>
+                                                <td data-label="Price" class="fw-bold">$48.00</td>
+                                                <td data-label="Quantity"><input type="number"
+                                                        class="form-control qty-input" value="1"></td>
+                                                <td data-label="Total" class="fw-bold">$48.00</td>
+                                                <td class="text-end pe-3"><i
+                                                        class="bi bi-trash text-primary remove-icon"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="product-img-box me-3">
+                                                            <img src="images/shoes2.jpg" alt="Special sport shoes">
+                                                        </div>
+                                                        <span class="fw-medium">Special sport shoes</span>
+                                                    </div>
+                                                </td>
+                                                <td data-label="Price" class="fw-bold">$95.00</td>
+                                                <td data-label="Quantity"><input type="number"
+                                                        class="form-control qty-input" value="1"></td>
+                                                <td data-label="Total" class="fw-bold">$95.00</td>
+                                                <td class="text-end pe-3"><i
+                                                        class="bi bi-trash text-primary remove-icon"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <a href="shop.html"
+                                        class="continue-link text-dark fw-bold text-decoration-none border-bottom border-2 border-dark">Continue
+                                        Shopping</a>
+                                    <a href="checkout.html"
+                                        class="btn btn-checkout rounded-3 px-4 py-2 text-white text-decoration-none">
+                                        Check Out
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Summaryy -->
+
+                        <div class="col-lg-4">
+                            <div class="summary-card bg-white rounded-4 shadow-sm p-4">
+                                <h5 class="summary-title mb-3">Summary</h5>
+                                <p class="summary-subtitle mb-4">Enter your destination to get a shipping estimate</p>
+
+                                <div class="mb-3">
+                                    <label class="form-label summary-label">Country *</label>
+                                    <select class="form-select summary-custom-input">
+                                        <option selected>United States</option>
+                                        <option value="1">Country 1</option>
+                                        <option value="2">Country 2</option>
+                                        <option value="3">Country 3</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label summary-label">State/Province</label>
+                                    <select class="form-select summary-custom-input">
+                                        <option selected>Please Select a region, state</option>
+                                        <option value="1">Region/State 1</option>
+                                        <option value="2">Region/State 2</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label summary-label">Zip/Postal Code</label>
+                                    <input type="text" class="form-control summary-custom-input"
+                                        placeholder="Zip/Postal Code">
+                                </div>
+
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="pricing-text">Sub-Total</span>
+                                    <span class="pricing-price">$734.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="pricing-text">Delivery Charges</span>
+                                    <span class="pricing-price">$80.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <span class="pricing-text">Coupon Discount</span>
+                                    <span class="apply-coupon">Apply Coupon</span>
+                                </div>
+
+                                <hr class="my-4" style="color: #f0f1f3; opacity: 1;">
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="total-label mb-0">Total Amount</h5>
+                                    <h5 class="total-value mb-0">$814.00</h5>
+                                </div>
+                            </div>
+                        </div>
+
+</body>
+
+</html>

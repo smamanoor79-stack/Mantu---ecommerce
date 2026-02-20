@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantu WooCommerce Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+ <!-- Header Navbar -->
+
+    <div class="container-fluid px-lg-6 ">
+        <div class="row">
+
+            <div class="col-12">
+
+                <header class="main-header shadow-sm bg-white d-flex align-items-center px-3 px-lg-4">
+                    <div class="header-left d-flex align-items-center">
+                        <div class="theme-switch-track me-3">
+                            <div class="theme-switch-handle"></div>
+                        </div>
+                        <a href="#" class="navbar-brand d-flex align-items-center">
+                            <div class="logo-icon-box me-2"><i class="bi bi-bag-heart-fill"></i></div>
+                            <span class="logo-text">Mantu</span>
+                        </a>
+                    </div>
+
+                    <div class="header-right-content d-flex align-items-center ms-auto">
+                        <nav class="header-nav d-none d-lg-block me-3">
+                            <ul class="nav">
+                                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+
+
+                                <!-- Categories section -->
+                                <li class="nav-item dropdown-wrapper">
+                                    <a href="#" class="nav-link">Categories <i
+                                            class="bi bi-chevron-down ms-1 small"></i></a>
+                                    <div class="mega-dropdown shadow-sm">
+                                        <div class="row g-0">
+                                            <div class="col-6 dropdown-column">
+                                                <h6 class="dropdown-header">Classic</h6>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Shop Right Sidebar</a></li>
+                                                    <li><a href="#">Banner Right Sidebar</a></li>
+                                                    <li><a href="#">Shop Full Width</a></li>
+                                                    <li><a href="#">Banner Full Width</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6 dropdown-column">
+                                                <h6 class="dropdown-header">List</h6>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Shop Right Sidebar</a></li>
+                                                    <li><a href="#">Banner Right Sidebar</a></li>
+                                                    <li><a href="#">Shop Full Width</a></li>
+                                                    <li><a href="#">Banner Full Width</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+                                <li class="nav-item dropdown-wrapper">
+                                    <a href="#" class="nav-link">Products <i
+                                            class="bi bi-chevron-down ms-1 small"></i></a>
+                                    <ul class="standard-dropdown shadow-sm list-unstyled">
+                                        <li><a href="product1.html">Product Detail</a></li>
+                                        <li><a href="product1.html">Product Accordion</a></li>
+                                        <li><a href="product1.html">Product Full Width</a></li>
+                                        <li><a href="#">Accordion Full Width</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown-wrapper">
+                                    <a class="nav-link" href="#">Pages <i class="bi bi-chevron-down"></i></a>
+                                    <ul class="standard-dropdown shadow-sm list-unstyled">
+                                        <li class="has-submenu">
+                                            <a href="#">Blog <i class="bi bi-chevron-right float-end mt-1"></i></a>
+                                            <div class="submenu-dropdown">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Blog Grid</a></li>
+                                                    <li><a href="#">Blog List</a></li>
+                                                    <li><a href="#">Blog Detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Cart</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="header-icons d-flex align-items-center">
+                            <a href="#" class="icon-link"><i class="bi bi-search"></i></a>
+                            <div class="dropdown-wrapper">
+                                <a href="#" class="icon-link"><i class="bi bi-person custom-account-icon"></i></a>
+                                <ul class="standard-dropdown shadow-sm list-unstyled">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="login.html">Register</a></li>
+                                    <li><a href="checkout.html">Checkout</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="icon-link position-relative"><i class="bi bi-heart"></i><span
+                                    class="badge-count">3</span></a>
+                            <a href="cart.html" class="icon-link position-relative"><i class="bi bi-cart3"></i><span
+                                    class="badge-count cart-bg">4</span></a>
+                        </div>
+                    </div>
+                </header>
+
+
+                <!-- Carousel Slider -->
+
+                <section class="hero-slider-container mt-4">
+                    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="slide-background" style="background-image: url('images/slider3.jpg');">
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5 offset-lg-1">
+                                        <div class="slide-content">
+                                            <div class="discount-badge">22%<br>Off</div>
+                                            <h1 class="slide-title">Fashion sale<br>for Children's</h1>
+                                            <p class="slide-subtitle">Wear the change. Fashion that feels good.</p>
+                                            <a href="shop.html" class="btn-shop-now">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="slide-background" style="background-image: url('images/slider2.jpg');">
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5 offset-lg-1">
+                                        <div class="slide-content">
+                                            <div class="discount-badge">35%<br>Off</div>
+                                            <h1 class="slide-title">Fashion sale<br>for Men's</h1>
+                                            <p class="slide-subtitle">Wear the change. Fashion that feels good.</p>
+                                            <a href="shop.html" class="btn-shop-now">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="slide-background" style="background-image: url('images/slider1.jpg');">
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5 offset-lg-1">
+                                        <div class="slide-content">
+                                            <div class="discount-badge">50%<br>Off</div>
+                                            <h1 class="slide-title">Fashion sale<br>for women's</h1>
+                                            <p class="slide-subtitle">Elevate your every day. Style that speaks volumes.
+                                            </p>
+                                            <a href="shop.html" class="btn-shop-now">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="slide-background" style="background-image: url('images/slider4.jpg');">
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5 offset-lg-1">
+                                        <div class="slide-content">
+                                            <div class="discount-badge">22%<br>Off</div>
+                                            <h1 class="slide-title">Cosmetics sale<br>for Women's</h1>
+                                            <p class="slide-subtitle">Wear the change. Fashion that feels good.</p>
+                                            <a href="#" class="btn-shop-now">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Category Card -->
+
+                 <section class="mn-category-section py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+
+            
+                <div class="mn-cat-card">
+                    <p class="lbl"><span>35%</span></p>
+                    <span class="bg">35%</span>
+                    <h4>Fashion</h4>
+                    <h3>Clothes</h3>
+                    <p class="items-count">Items (16)</p>
+                    <div class="cat-gallery">
+                        <img src="images/clothes1.jpg" alt="img"><img src="images/clothes2.jpg" alt="img"><img src="images/clothes3.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6 mn-cat-item">
+                <div class="mn-cat-card">
+                    <p class="lbl"><span>22%</span></p>
+                    <span class="bg">22%</span>
+                    <h4>Generic</h4>
+                    <h3>Cosmetics</h3>
+                    <p class="items-count">Items (45)</p>
+                    <div class="cat-gallery">
+                        <img src="images/cosmetics1.jpg" alt="img"><img src="images/cosmetics2.jpg" alt="img"><img src="images/cosmetics3.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+           <div class="col-xl-3 col-lg-4 col-md-6 col-6 mn-cat-item">
+                <div class="mn-cat-card">
+                    <p class="lbl"><span>65%</span></p>
+                    <span class="bg">65%</span>
+                    <h4>Stylish</h4>
+                    <h3>Shoes</h3>
+                    <p class="items-count">Items (58)</p>
+                    <div class="cat-gallery">
+                        <img src="images/shoes1.jpg" alt="img"><img src="images/shoes2.jpg" alt="img"><img src="images/shoes3.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+           <div class="col-xl-3 col-lg-4 col-md-6 col-6 mn-cat-item">
+                <div class="mn-cat-card">
+                    <p class="lbl"><span>45%</span></p>
+                    <span class="bg">45%</span>
+                    <h4>Digital</h4>
+                    <h3>Watches</h3>
+                    <p class="items-count">Items (64)</p>
+                    <div class="cat-gallery">
+                        <img src="images/10.jpg" alt="img"><img src="images/11.jpg" alt="img"><img src="images/12.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- New Arrivals -->
+        <div class="d-flex justify-content-between align-items-center mt-5 mb-4 ">
+            <h2 class="section-title">New <span>Arrivals</span></h2>
+            <div class="mn-slider-controls">
+                <div class="slider-toggle">
+                    <span class="active-pill"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+        <hr class="mn-divider">
+       
+       
+
+    <!-- New Arrivals Product Grid - -->
+        <div class="row na-grid mt-2 mb-5">
+
+            <!-- Card 1: TRENDING -->
+            <div class="na-col">
+                <div class="na-card">
+                    <div class="na-imgbox">
+                        <span class="na-badge na-badge--trending">TRENDING</span>
+                        <a href="product-detail.html">
+                            <img src="images/shirt.jpg" alt="Cotton fabric T-shirt" class="na-img">
+                        </a>
+                        <div class="na-actions">
+                            <button class="na-act-btn na-act-btn--qv" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cmp" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cart" title="Add to Cart">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="na-info">
+                        <div class="na-meta">
+                            <span class="na-type">T-SHIRT</span>
+                            <span class="na-sizes">S M XL</span>
+                        </div>
+                        <h4 class="na-title"><a href="product-detail.html">Cotton fabric T-shirt</a></h4>
+                        <div class="na-prices">
+                            <span class="na-price-now">$120</span>
+                            <span class="na-price-old">$130</span>
+                        </div>
+                        <div class="na-swatches">
+                            <span class="na-swatch" style="background:#c9a0dc;"></span>
+                            <span class="na-swatch" style="background:#5C6BC0;"></span>
+                            <span class="na-swatch" style="background:#E91E63;"></span>
+                            <span class="na-swatch" style="background:#66BB6A;"></span>
+                            <button class="na-heart"><i class="bi bi-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: No badge -->
+            <div class="na-col">
+                <div class="na-card">
+                    <div class="na-imgbox">
+                        <a href="product-detail.html">
+                            <img src="images/shoes1.jpg" alt="Special sport shoes" class="na-img">
+                        </a>
+                        <div class="na-actions">
+                            <button class="na-act-btn na-act-btn--qv" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cmp" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cart" title="Add to Cart">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="na-info">
+                        <div class="na-meta">
+                            <span class="na-type">SHOES</span>
+                            <span class="na-sizes">7 8 10</span>
+                        </div>
+                        <h4 class="na-title"><a href="product-detail.html">Special sport shoes</a></h4>
+                        <div class="na-prices">
+                            <span class="na-price-now">$55</span>
+                        </div>
+                        <div class="na-swatches">
+                            <span class="na-swatch" style="background:#424242;"></span>
+                            <span class="na-swatch" style="background:#E91E63;"></span>
+                            <span class="na-swatch na-swatch--star" style="background:#FDD835;"></span>
+                            <button class="na-heart"><i class="bi bi-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: NEW -->
+            <div class="na-col">
+                <div class="na-card">
+                    <div class="na-imgbox">
+                        <span class="na-badge na-badge--new">NEW</span>
+                        <a href="product-detail.html">
+                            <img src="images/fshirt.jpg" alt="Cotton fabric Top" class="na-img">
+                        </a>
+                        <div class="na-actions">
+                            <button class="na-act-btn na-act-btn--qv" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cmp" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cart" title="Add to Cart">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="na-info">
+                        <div class="na-meta">
+                            <span class="na-type">TOP</span>
+                            <span class="na-sizes">S M</span>
+                        </div>
+                        <h4 class="na-title"><a href="product-detail.html">Cotton fabric Top</a></h4>
+                        <div class="na-prices">
+                            <span class="na-price-now">$120</span>
+                            <span class="na-price-old">$130</span>
+                        </div>
+                        <div class="na-swatches">
+                            <span class="na-swatch" style="background:#E0E0E0;"></span>
+                            <span class="na-swatch" style="background:#CE93D8;"></span>
+                            <button class="na-heart"><i class="bi bi-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: SALE -->
+            <div class="na-col">
+                <div class="na-card">
+                    <div class="na-imgbox">
+                        <span class="na-badge na-badge--sale">SALE</span>
+                        <a href="product-detail.html">
+                            <img src="images/watch.jpg" alt="Mantu smart watch" class="na-img">
+                        </a>
+                        <div class="na-actions">
+                            <button class="na-act-btn na-act-btn--qv" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cmp" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cart" title="Add to Cart">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="na-info">
+                        <div class="na-meta">
+                            <span class="na-type">WATCHES</span>
+                        </div>
+                        <h4 class="na-title"><a href="product-detail.html">Mantu smart watch</a></h4>
+                        <div class="na-prices">
+                            <span class="na-price-now">$955</span>
+                            <span class="na-price-old">$999</span>
+                        </div>
+                        <div class="na-swatches">
+                            <span class="na-swatch" style="background:#E0E0E0;"></span>
+                            <span class="na-swatch" style="background:#424242;"></span>
+                            <button class="na-heart"><i class="bi bi-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: 20% OFF -->
+            <div class="na-col">
+                <div class="na-card">
+                    <div class="na-imgbox">
+                        <span class="na-badge na-badge--discount">20% OFF</span>
+                        <a href="product-detail.html">
+                            <img src="images/15.jpg" alt="Mantu leather belt" class="na-img">
+                        </a>
+                        <div class="na-actions">
+                            <button class="na-act-btn na-act-btn--qv" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cmp" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cart" title="Add to Cart">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="na-info">
+                        <div class="na-meta">
+                            <span class="na-type">BELT</span>
+                        </div>
+                        <h4 class="na-title"><a href="product-detail.html">Mantu leather belt</a></h4>
+                        <div class="na-prices">
+                            <span class="na-price-now">$10</span>
+                            <span class="na-price-old">$12</span>
+                        </div>
+                        <div class="na-swatches">
+                            <span class="na-swatch" style="background:#8D6E63;"></span>
+                            <span class="na-swatch" style="background:#424242;"></span>
+                            <button class="na-heart"><i class="bi bi-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- end na-grid -->
+
+<!-- Service Card Integration -->
+
+<section class="info-service-section mt-1 mb-2">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="info-service-card">
+                    <div class="info-icon">
+                        <i class="bi bi-truck"></i>
+                    </div>
+                    <h5>Free Shipping</h5>
+                    <p>Free shipping on all US order or order above $200</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="info-service-card">
+                    <div class="info-icon">
+                        <i class="bi bi-headset"></i>
+                    </div>
+                    <h5>24X7 Support</h5>
+                    <p>Contact us 24 hours live support, 7 days in a week</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="info-service-card">
+                    <div class="info-icon">
+                        <i class="bi bi-arrow-repeat"></i>
+                    </div>
+                    <h5>30 Days Return</h5>
+                    <p>Simply return it within 30 days for an exchange</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+                <div class="info-service-card">
+                    <div class="info-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h5>Payment Secure</h5>
+                    <p>Contact us 24 hours live support, 7 days in a week</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Image Banner -->
+
+
+
+
+<!-- Day of Deals -->
+
+<div class="d-flex justify-content-between align-items-center container-fluid mt-5 mb-4">
+    <div class="d-flex align-items-center  ">
+            <h2 class="section-title mb-0">Day of the <span>Deals</span></h2>
+            <div class="mtu-timer-pill d-flex align-items-center gap-2">
+            <span class="timer-value">241</span> <span class="timer-label">Days</span>
+            <span class="timer-value">18</span> <span class="timer-sep">:</span>
+            <span class="timer-value">58</span> <span class="timer-sep">:</span>
+            <span class="timer-value">12</span>
+    </div>
+</div>     
+            <div class="mn-slider-controls">
+                <div class="slider-toggle">
+                    <span class="active-pill"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+        <hr class="mn-divider">
+
+        <!-- Day of Deals images -->
+         <!-- New Arrivals Product Grid - -->
+        <div class="row na-grid mt-2 mb-5">
+
+            <!-- Card 1: TRENDING -->
+            <div class="na-col">
+                <div class="na-card">
+                    <div class="na-imgbox">
+                        <span class="na-badge na-badge--trending">TRENDING</span>
+                        <a href="product-detail.html">
+                            <img src="images/shirt.jpg" alt="Cotton fabric T-shirt" class="na-img">
+                        </a>
+                        <div class="na-actions">
+                            <button class="na-act-btn na-act-btn--qv" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cmp" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cart" title="Add to Cart">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="na-info">
+                        <div class="na-meta">
+                            <span class="na-type">T-SHIRT</span>
+                            <span class="na-sizes">S M XL</span>
+                        </div>
+                        <h4 class="na-title"><a href="product-detail.html">Cotton fabric T-shirt</a></h4>
+                        <div class="na-prices">
+                            <span class="na-price-now">$120</span>
+                            <span class="na-price-old">$130</span>
+                        </div>
+                        <div class="na-swatches">
+                            <span class="na-swatch" style="background:#c9a0dc;"></span>
+                            <span class="na-swatch" style="background:#5C6BC0;"></span>
+                            <span class="na-swatch" style="background:#E91E63;"></span>
+                            <span class="na-swatch" style="background:#66BB6A;"></span>
+                            <button class="na-heart"><i class="bi bi-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: No badge -->
+            <div class="na-col">
+                <div class="na-card">
+                    <div class="na-imgbox">
+                        <a href="product-detail.html">
+                            <img src="images/shoes1.jpg" alt="Special sport shoes" class="na-img">
+                        </a>
+                        <div class="na-actions">
+                            <button class="na-act-btn na-act-btn--qv" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cmp" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cart" title="Add to Cart">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="na-info">
+                        <div class="na-meta">
+                            <span class="na-type">SHOES</span>
+                            <span class="na-sizes">7 8 10</span>
+                        </div>
+                        <h4 class="na-title"><a href="product-detail.html">Special sport shoes</a></h4>
+                        <div class="na-prices">
+                            <span class="na-price-now">$55</span>
+                        </div>
+                        <div class="na-swatches">
+                            <span class="na-swatch" style="background:#424242;"></span>
+                            <span class="na-swatch" style="background:#E91E63;"></span>
+                            <span class="na-swatch na-swatch--star" style="background:#FDD835;"></span>
+                            <button class="na-heart"><i class="bi bi-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: NEW -->
+            <div class="na-col">
+                <div class="na-card">
+                    <div class="na-imgbox">
+                        <span class="na-badge na-badge--new">NEW</span>
+                        <a href="product-detail.html">
+                            <img src="images/fshirt.jpg" alt="Cotton fabric Top" class="na-img">
+                        </a>
+                        <div class="na-actions">
+                            <button class="na-act-btn na-act-btn--qv" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cmp" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cart" title="Add to Cart">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="na-info">
+                        <div class="na-meta">
+                            <span class="na-type">TOP</span>
+                            <span class="na-sizes">S M</span>
+                        </div>
+                        <h4 class="na-title"><a href="product-detail.html">Cotton fabric Top</a></h4>
+                        <div class="na-prices">
+                            <span class="na-price-now">$120</span>
+                            <span class="na-price-old">$130</span>
+                        </div>
+                        <div class="na-swatches">
+                            <span class="na-swatch" style="background:#E0E0E0;"></span>
+                            <span class="na-swatch" style="background:#CE93D8;"></span>
+                            <button class="na-heart"><i class="bi bi-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+ <!-- Card 4: SALE -->
+            <div class="na-col">
+                <div class="na-card">
+                    <div class="na-imgbox">
+                        <span class="na-badge na-badge--sale">SALE</span>
+                        <a href="product-detail.html">
+                            <img src="images/watch.jpg" alt="Mantu smart watch" class="na-img">
+                        </a>
+                        <div class="na-actions">
+                            <button class="na-act-btn na-act-btn--qv" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cmp" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cart" title="Add to Cart">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="na-info">
+                        <div class="na-meta">
+                            <span class="na-type">WATCHES</span>
+                        </div>
+                        <h4 class="na-title"><a href="product-detail.html">Mantu smart watch</a></h4>
+                        <div class="na-prices">
+                            <span class="na-price-now">$955</span>
+                            <span class="na-price-old">$999</span>
+                        </div>
+                        <div class="na-swatches">
+                            <span class="na-swatch" style="background:#E0E0E0;"></span>
+                            <span class="na-swatch" style="background:#424242;"></span>
+                            <button class="na-heart"><i class="bi bi-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: 20% OFF -->
+            <div class="na-col">
+                <div class="na-card">
+                    <div class="na-imgbox">
+                        <span class="na-badge na-badge--discount">20% OFF</span>
+                        <a href="product-detail.html">
+                            <img src="images/15.jpg" alt="Mantu leather belt" class="na-img">
+                        </a>
+                        <div class="na-actions">
+                            <button class="na-act-btn na-act-btn--qv" title="Quick View" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cmp" title="Compare">
+                                <i class="bi bi-shuffle"></i>
+                            </button>
+                            <button class="na-act-btn na-act-btn--cart" title="Add to Cart">
+                                <i class="bi bi-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="na-info">
+                        <div class="na-meta">
+                            <span class="na-type">BELT</span>
+                        </div>
+                        <h4 class="na-title"><a href="product-detail.html">Mantu leather belt</a></h4>
+                        <div class="na-prices">
+                            <span class="na-price-now">$10</span>
+                            <span class="na-price-old">$12</span>
+                        </div>
+                        <div class="na-swatches">
+                            <span class="na-swatch" style="background:#8D6E63;"></span>
+                            <span class="na-swatch" style="background:#424242;"></span>
+                            <button class="na-heart"><i class="bi bi-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+ </div><!-- end na-grid -->
+
+
+<!-- Testimonail Section -->
+
+<section class="mtu-testimonial-area py-4">
+    <div class="container mt-0">
+        <div id="mtuMantuSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="mtu-tst-card mx-auto">
+                        <img src="images/bottom-quotes.svg" class="mtu-quote t-quote" alt="quote">
+                        <div class="mtu-pfp-wrap">
+                            <img src="images/testimonial3.jpg" alt="John Doe">
+                        </div>
+                        <p class="mtu-tst-text">Standard dummy text ever since the 1500s, when an unknown printer took a galley of type and this is the lorem and scrambled it to make a type specimen.</p>
+                        <div class="mtu-tst-author">John Doe</div>
+                        <div class="mtu-tst-role">(CFO)</div>
+                        <img src="images/bottom-quotes.svg" class="mtu-quote b-quote" alt="quote">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="mtu-tst-card mx-auto">
+                        <img src="images/bottom-quotes.svg" class="mtu-quote t-quote" alt="quote">
+                        <div class="mtu-pfp-wrap">
+                            <img src="images/testimonial2.jpg" alt="Mariya Klinton">
+                        </div>
+                        <p class="mtu-tst-text">Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <div class="mtu-tst-author">Mariya Klinton</div>
+                        <div class="mtu-tst-role">(CEO)</div>
+                        <img src="images/bottom-quotes.svg" class="mtu-quote b-quote" alt="quote">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="mtu-tst-card mx-auto">
+                        <img src="images/bottom-quotes.svg" class="mtu-quote t-quote" alt="quote">
+                        <div class="mtu-pfp-wrap">
+                            <img src="images/testimonial1.jpg" alt="Nency Lykra">
+                        </div>
+                        <p class="mtu-tst-text">When an unknown printer took a galley of type and scrambled it to make a type specimen Lorem Ipsum has been the industry's and ever since to the 1500s,</p>
+                        <div class="mtu-tst-author">Nency Lykra</div>
+                        <div class="mtu-tst-role">(MANAGER)</div>
+                        <img src="images/bottom-quotes.svg" class="mtu-quote b-quote" alt="quote">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Our Blogs  -->
+
+<section class="mtu-blog-section pb-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="mtu-blog-title mb-0">Our <span>Blogs</span></h2>
+            
+            <div class="mtu-slider-controls">
+                <div class="carousel-indicators mtu-inline-dots position-relative m-0">
+                    <button type="button" data-bs-target="#mtuMantuSlider" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#mtuMantuSlider" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#mtuMantuSlider" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+
+<hr class="mtu-blog-divider mb-4">
+<div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="mtu-blog-card">
+                    <div class="mtu-blog-img">
+                        <img src="images/blogs1.jpg" alt="Marketing Guide">
+                    </div>
+                    <div class="mtu-blog-info">
+                        <span class="mtu-blog-date">June 30, 2025 -<span class="mtu-cat"> Fashion</span></span>
+                        <h3 class="mtu-blog-name">Marketing Guide: 5 Steps to Success to way.</h3>
+                        <a href="#" class="mtu-read-more">Read More »</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="mtu-blog-card">
+                    <div class="mtu-blog-img">
+                        <img src="images/blogs2.jpg" alt="Business Issue">
+                    </div>
+                    <div class="mtu-blog-info">
+                        <span class="mtu-blog-date">April 02, 2025 -<span class="mtu-cat"> Shoes</span></span>
+                        <h3 class="mtu-blog-name">Best way to solve business issue in market.</h3>
+                        <a href="#" class="mtu-read-more">Read More »</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="mtu-blog-card">
+                    <div class="mtu-blog-img">
+                        <img src="images/blogs3.jpg" alt="Grocery Stats">
+                    </div>
+                    <div class="mtu-blog-info">
+                        <span class="mtu-blog-date">Mar 09, 2025 - <span class="mtu-cat">Grocery</span></span>
+                        <h3 class="mtu-blog-name">31 grocery customer service stats know in...</h3>
+                        <a href="#" class="mtu-read-more">Read More »</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="mtu-blog-card">
+                    <div class="mtu-blog-img">
+                        <img src="images/blogs4.jpg" alt="Business Traffic">
+                    </div>
+                    <div class="mtu-blog-info">
+                        <span class="mtu-blog-date">January 25, 2025 -<span class="mtu-cat"> Bags</span></span>
+                        <h3 class="mtu-blog-name">Business ideas to grow your business traffic.</h3>
+                        <a href="#" class="mtu-read-more">Read More »</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Instagram feed Section -->
+        <section class="mtu-insta-section pb-5">
+    <div class="container-fluid px-0">
+        <div class="mtu-insta-wrapper d-flex flex-nowrap">
+            
+            <div class="mtu-insta-item">
+                <div class="mtu-insta-inner">
+                    <img src="images/insta2.jpg" alt="Insta">
+                    <div class="mtu-insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mtu-insta-item">
+                <div class="mtu-insta-inner">
+                    <img src="images/insta1.jpg" alt="Insta">
+                    <div class="mtu-insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mtu-insta-item">
+                <div class="mtu-insta-inner">
+                    <img src="images/insta3.jpg" alt="Insta">
+                    <div class="mtu-insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mtu-insta-item">
+                <div class="mtu-insta-inner">
+                    <img src="images/insta4.jpg" alt="Insta">
+                    <div class="mtu-insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mtu-insta-item">
+                <div class="mtu-insta-inner">
+                    <img src="images/insta5.jpg" alt="Insta">
+                    <div class="mtu-insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mtu-insta-item"><div class="mtu-insta-inner"><img src="images/insta1.jpg" alt="Insta"><div class="mtu-insta-overlay"><i class="fab fa-instagram"></i></div></div></div>
+            <div class="mtu-insta-item"><div class="mtu-insta-inner"><img src="images/insta2.jpg" alt="Insta"><div class="mtu-insta-overlay"><i class="fab fa-instagram"></i></div></div></div>
+            <div class="mtu-insta-item"><div class="mtu-insta-inner"><img src="images/insta3.jpg" alt="Insta"><div class="mtu-insta-overlay"><i class="fab fa-instagram"></i></div></div></div>
+            <div class="mtu-insta-item"><div class="mtu-insta-inner"><img src="images/insta4.jpg" alt="Insta"><div class="mtu-insta-overlay"><i class="fab fa-instagram"></i></div></div></div>
+
+        </div>
+    </div>
+</section>
+        
+
+    </div>
+</section>
+
+
+<!-- Modal Quick view -->
+               <div class="modal fade" id="quickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered qv-modal-custom">
+        <div class="modal-content border-0 position-relative">
+            <button type="button" class="qv-red-dot-close" data-bs-dismiss="modal" aria-label="Close">
+        <i class="bi bi-x"></i>
+    </button>
+            <div class="modal-body p-0">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <div class="qv-img-container">
+                            <img src="images/fshirt.jpg" class="img-fluid rounded-4" alt="Product">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="qv-content-box">
+                            <h5 class="qv-title">Best cotton fabric women's half sleeve T-shirt white color.</h5>
+                            <div class="qv-rating mb-2">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill text-muted"></i>
+                            </div>
+                            <p class="qv-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1900s.</p>
+                            <div class="qv-price-box">
+                                <span class="qv-current-price">$50.00</span>
+                                <span class="qv-old-price">$62.00</span>
+                            </div>
+                            <div class="d-flex gap-2 mb-4">
+                                <span class="qv-size active">S</span>
+                                <span class="qv-size">M</span>
+                                <span class="qv-size">L</span>
+                                <span class="qv-size">XL</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="qv-qty-selector">
+                                    <button>-</button>
+                                    <input type="text" value="1" readonly>
+                                    <button>+</button>
+                                </div>
+                                <a href="cart.html" class="btn qv-cart-btn">
+    <i class="bi bi-bag me-2"></i>Add To Cart
+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+     <footer class="mantu-footer py-5">
+    <div class="container-fluid px-lg-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <img src="images/logo-dark.png" alt="Mantu" class="footer-logo mb-3">
+                <p class="footer-desc">The Mantu is the biggest market of grocery products. Get your daily needs from our store.</p>
+                <div class="mantu-app-stack mt-4">
+    <a href="#" class="store-btn">
+        <img src="images/Googleplay.png" alt="Google Play">
+    </a>
+    <a href="#" class="store-btn">
+        <img src="images/applestore.png" alt="App Store">
+    </a>
+</div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h4 class="footer-title">Category</h4>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="shop.html">Fashion</a></li>
+                    <li><a href="shop.html">Cosmetics</a></li>
+                    <li><a href="shop.html">Bags & Purse</a></li>
+                    <li><a href="shop.html">Shoes</a></li>
+                    <li><a href="shop.html">Belts</a></li>
+                    <li><a href="shop.html">Perfumes</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h4 class="footer-title">Company</h4>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Secure Payment</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h4 class="footer-title">Account</h4>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="cart.html">View Cart</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Become a Vendor</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Payments</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h4 class="footer-title">Contact</h4>
+                <div class="contact-info">
+                    <p><i class="bi bi-geo-alt me-2"></i> 1234 Elm Street Springfield Avenue, Brooklyn den, IL 62704 USA.</p>
+                    <p><i class="bi bi-telephone me-2"></i> +00 9876543210</p>
+                    <p><i class="bi bi-envelope me-2"></i> example@email.com</p>
+                </div>
+                <div class="social-icons d-flex gap-2 mt-3">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-hr mt-0 mb-3">
+
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <p class="m-0 text-white">Copyright © 2026 <span style="color: #ffd783;">The Mantu</span> all rights reserved.</p>
+            <div class="payment-methods">
+                <img src="images/payment.png" alt="Payments" width="250"> </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
