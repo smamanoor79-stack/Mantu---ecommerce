@@ -8,7 +8,7 @@ A clean, responsive e-commerce front-end template built with HTML, CSS, and Boot
 
 | Page | File | Description |
 |------|------|-------------|
-| Home | `home.html` | Landing page with hero section and featured products |
+| Home | `index.html` | Landing page with hero section and featured products |
 | Shop | `shop.html` | Product listing/browse page |
 | Product Detail | `Product1.html` | Individual product page |
 | Cart | `cart.html` | Shopping cart page |
@@ -34,7 +34,7 @@ A clean, responsive e-commerce front-end template built with HTML, CSS, and Boot
 ```
 mantu-ecommerce/
 │
-├── home.html
+├── index.html
 ├── shop.html
 ├── Product1.html
 ├── cart.html
@@ -73,7 +73,7 @@ mantu-ecommerce/
      git clone https://github.com/smamanoor79-stack/Mantu---ecommerce.git
    ```
 
-2. Open `home.html` in your browser — no build tools or dependencies required.
+2. Open `index.html` in your browser — no build tools or dependencies required.
 
 ---
 
