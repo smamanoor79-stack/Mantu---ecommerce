@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - API Integration Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Login</h3>
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="user@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                            </div>
+                            <div id="error" class="alert alert-danger" style="display: none;"></div>
+                            <div id="success" class="alert alert-success" style="display: none;">Login successful! Redirecting...</div>
+                            <button type="submit" class="btn btn-primary w-100" id="submitBtn">Login</button>
+                        </form>
+                        <hr>
+                        <p class="text-center">Don't have an account? <a href="signup-page-example.html">Sign up here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        const errorDiv = document.getElementById('error');
+        const successDiv = document.getElementById('success');
+        const submitBtn = document.getElementById('submitBtn');
+        
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            errorDiv.style.display = 'none';
+            successDiv.style.display = 'none';
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Logging in...';
+            
+            try {
+                const result = await loginUser(email, password);
+                if (result && result.token) {
+                    successDiv.style.display = 'block';
+                    setTimeout(() => { window.location.href = '/index.html'; }, 2000);
+                } else { throw new Error('Invalid credentials'); }
+            } catch (error) {
+                errorDiv.style.display = 'block';
+                errorDiv.textContent = error.message || 'Login failed';
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Login';
+            }
+        });
+    </script>
+</body>
+</html>

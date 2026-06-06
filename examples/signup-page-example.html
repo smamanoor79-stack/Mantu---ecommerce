@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - API Integration Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Sign Up</h3>
+                        <form id="signupForm">
+                            <div class="mb-3"><label for="name" class="form-label">Full Name</label><input type="text" class="form-control" id="name" placeholder="John Doe" required></div>
+                            <div class="mb-3"><label for="email" class="form-label">Email</label><input type="email" class="form-control" id="email" placeholder="user@example.com" required></div>
+                            <div class="mb-3"><label for="password" class="form-label">Password</label><input type="password" class="form-control" id="password" placeholder="Enter password (min 6 characters)" minlength="6" required></div>
+                            <div class="mb-3"><label for="confirmPassword" class="form-label">Confirm Password</label><input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password" minlength="6" required></div>
+                            <div id="error" class="alert alert-danger" style="display: none;"></div>
+                            <div id="success" class="alert alert-success" style="display: none;">Account created successfully! Redirecting...</div>
+                            <button type="submit" class="btn btn-primary w-100" id="submitBtn">Create Account</button>
+                        </form>
+                        <hr>
+                        <p class="text-center">Already have an account? <a href="login-page-example.html">Login here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script>
+        const signupForm = document.getElementById('signupForm');
+        const errorDiv = document.getElementById('error');
+        const successDiv = document.getElementById('success');
+        const submitBtn = document.getElementById('submitBtn');
+        
+        signupForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            errorDiv.style.display = 'none';
+            successDiv.style.display = 'none';
+            
+            if (password !== confirmPassword) {
+                errorDiv.textContent = 'Passwords do not match';
+                errorDiv.style.display = 'block';
+                return;
+            }
+            
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Creating account...';
+            
+            try {
+                const result = await signupUser(name, email, password);
+                if (result && result.token) {
+                    successDiv.style.display = 'block';
+                    setTimeout(() => { window.location.href = '/index.html'; }, 2000);
+                } else { throw new Error('Failed to create account'); }
+            } catch (error) {
+                errorDiv.style.display = 'block';
+                errorDiv.textContent = error.message || 'Signup failed';
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Create Account';
+            }
+        });
+    </script>
+</body>
+</html>
