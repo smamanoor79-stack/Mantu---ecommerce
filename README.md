@@ -50,8 +50,8 @@ mantu-ecommerce/
 
 ## 🌐 Live Demo
 
-> Hosted via GitHub Pages:  
-> https://smamanoor79-stack.github.io/Mantu---ecommerce/home.html
+> Hosted via Vercel:  
+> https://mantu-ecommerce.vercel.app/
 ---
 
 ## ✨ Features
