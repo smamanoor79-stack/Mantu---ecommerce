@@ -57,7 +57,6 @@ mantu-ecommerce/
 ## ✨ Features
 
 - Responsive navigation with mega dropdown menus
-- Dark/light theme toggle switch
 - Product detail pages
 - Cart and checkout flow
 - Login page with form validation
